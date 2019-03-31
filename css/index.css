@@ -160,7 +160,7 @@ footer nav a {
     font-family: 'Rubik' Times sans-serif;
 }
 
-.container .header-content .index-head-img {
+.container .header-content .head-img {
     width: 100%;
     margin: 20px 0 15px;
 }
@@ -205,3 +205,5 @@ footer nav a {
 .middle-content .boxes .box-10 {
     background-color: dodgerblue;
 }
+
+/*  About Page  */
