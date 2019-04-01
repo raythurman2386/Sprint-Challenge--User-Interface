@@ -240,7 +240,7 @@ footer nav a {
     background-color: white;
     border: 2px solid black;
     border-radius: 8px;
-    padding: 8px 20px;
+    padding: 6px 20px;
     margin-top: 20px;
     font-size: 16px;
     cursor: pointer;
@@ -283,6 +283,11 @@ footer nav a {
     padding: 5px;
 }
 
+.container .form input:hover,
+.container .form textarea:hover {
+    border: 1px solid black;
+}
+
 
 /* Animations */
 @keyframes fadeIn {
@@ -305,4 +310,28 @@ footer nav a {
 .container.about-page .about-mid .card .learn:hover {
     animation: changeBG;
     animation-duration: 1s;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 500px;
+    }
+    .container .header-content .top-nav,
+    .container.about-page .about-mid .card,
+    .container .middle-content .boxes .box,
+    .container .form input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 98%;
+    }
+    .container .header-content .top-nav a,
+    .container .form label {
+        margin-top: 10px;
+    }
+    .container.about-page .about-mid .card p {
+        margin: 0 20px;
+    }
 }
