@@ -144,3 +144,207 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/*  Index CSS   */
+.container .header-content .top-nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 20px 40px 20px 0;
+}
+
+.container .header-content .top-nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    font-family: 'Rubik' Times sans-serif;
+}
+
+.container .header-content .head-img {
+    width: 100%;
+    margin: 20px 0 15px;
+}
+
+/* Boxes */
+.middle-content .boxes .box.box-1 {
+    background: teal;
+}
+
+.middle-content .boxes .box.box-2 {
+    background-color: gold;
+}
+
+.middle-content .boxes .box-3 {
+    background-color: cadetblue;
+}
+
+.middle-content .boxes .box-4 {
+    background-color: coral;
+}
+
+.middle-content .boxes .box-5 {
+    background-color: crimson;
+}
+
+.middle-content .boxes .box-6 {
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box-7 {
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box-8 {
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box-9 {
+    background-color: indigo;
+}
+
+.middle-content .boxes .box-10 {
+    background-color: dodgerblue;
+}
+
+/*  About Page  & Products Page */
+.container.about-page .about-top,
+.container.about-page .about-bottom,
+.container.products-page .products-top {
+    padding: 0px 20px 20px;
+}
+
+.container.about-page .about-top,
+.container.about-page .about-mid .card,
+.container.products-page .products-top,
+.container.products-page .products-mid .card {
+    border-bottom: 1px dashed black;
+}
+
+.container.about-page .about-mid,
+.container.products-page .products-mid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container.about-page .about-mid .card,
+.container.products-page .products-mid .card {
+    width: 45%;
+    padding: 20px 0;
+}
+
+.container.about-page .about-mid .card.card-bottom {
+    margin-top: 20px;
+}
+
+.container.about-page .about-mid .card h2,
+.container.products-page .products-mid .card h2 {
+    padding-top: 10px;
+}
+
+.container.about-page .about-mid .card .learn {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 6px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container.about-page .about-bottom {
+    margin: 40px 0 20px;
+}
+
+/* Contact */
+.top-content .text-container-contact {
+    width: 98%;
+    padding: 0 1%;
+    padding-bottom: 20px;
+}
+
+.container .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+    margin-bottom: 20px;
+}
+
+.container .form input {
+    width: 20%;
+}
+
+.container .form textarea {
+    width: 98%;
+    margin: 20px auto;    
+}
+
+.container .form input,
+.container .form textarea {
+    border: 1px solid darkgray;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.container .form input:hover,
+.container .form textarea:hover {
+    border: 1px solid black;
+}
+
+/*  Products    */
+.container.products-page .products-mid {
+    margin-bottom: 20px;
+}
+
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes changeBG {
+    from {background-color: white; color: black;}
+    to {background-color: crimson; color: white;}
+}
+
+.container,
+.container.about-page,
+.container .contact-page {
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+.container.about-page .about-mid .card .learn:hover {
+    animation: changeBG;
+    animation-duration: 1s;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 500px;
+    }
+    .container .header-content .top-nav,
+    .container.about-page .about-mid .card,
+    .container.products-page .products-mid .card,
+    .container .middle-content .boxes .box,
+    .container .form input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 98%;
+    }
+    .container .header-content .top-nav a,
+    .container .form label {
+        margin-top: 10px;
+    }
+    .container.about-page .about-mid .card p {
+        margin: 0 20px;
+    }
+}
