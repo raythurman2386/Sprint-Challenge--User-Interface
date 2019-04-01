@@ -206,9 +206,9 @@ footer nav a {
     background-color: dodgerblue;
 }
 
-/*  About Page  */
+/*  About Page  & Products Page */
 .container.about-page .about-top,
-.container.about-page .about-bottom
+.container.about-page .about-bottom,
 .container.products-page .products-top {
     padding: 0px 20px 20px;
 }
@@ -295,10 +295,6 @@ footer nav a {
 }
 
 /*  Products    */
-.container.products-page .products-top {
-    padding: 20px;
-    margin-bottom: 20px;
-}
 .container.products-page .products-mid {
     margin-bottom: 20px;
 }
@@ -335,6 +331,7 @@ footer nav a {
     }
     .container .header-content .top-nav,
     .container.about-page .about-mid .card,
+    .container.products-page .products-mid .card,
     .container .middle-content .boxes .box,
     .container .form input {
         display: flex;
