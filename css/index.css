@@ -224,7 +224,7 @@ footer nav a {
 }
 
 .container.about-page .about-mid .card {
-    width: 360px;
+    width: 45%;
     padding: 20px 0;
 }
 
@@ -249,6 +249,40 @@ footer nav a {
 .container.about-page .about-bottom {
     margin: 40px 0 20px;
 }
+
+/* Contact */
+.top-content .text-container-contact {
+    width: 98%;
+    padding: 0 1%;
+    padding-bottom: 20px;
+}
+
+.container .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+    margin-bottom: 20px;
+}
+
+.container .form input {
+    width: 20%;
+}
+
+.container .form textarea {
+    width: 98%;
+    margin: 20px auto;    
+}
+
+.container .form input,
+.container .form textarea {
+    border: 1px solid darkgray;
+    border-radius: 8px;
+    padding: 5px;
+}
+
 
 /* Animations */
 @keyframes fadeIn {
